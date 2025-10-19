@@ -1,1 +1,149 @@
 # lili1
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil Instagram</title>
+
+</head>
+<body>
+    <section class="profile">
+  <div class="profile-text">
+    <h1>Olá, eu sou a Alice, <span> estudante do curso de Ciências da computação na Unifal</Cite></span></h1>
+    <p>
+      Tenho o intuito de me especializar na área de Engenhraira de Software! 
+    </p>
+
+    <div class="profile-buttons">
+      <a href="#" class="primary">Contato : alice.joyce@sou.unifal-mg.edu.br</a>
+    </div>
+  </div>
+
+  <div class="profile-photo">
+    <img src="alice.jpg" alt="Foto da Alice">
+    <div class="badge">
+      <img src="sfot.jpg" alt="">
+      <span>Software Engine</span>
+    </div>
+  </div>
+</section>
+<style>
+  /* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* ===== CONTAINER PRINCIPAL ===== */
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 60px 80px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  margin: 60px auto;
+}
+
+/* ===== TEXTO À ESQUERDA ===== */
+.profile-text {
+  max-width: 520px;
+}
+
+.profile-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.profile-text h1 span {
+  color: #111;
+}
+
+.profile-text p {
+  color: #777;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* ===== BOTÕES ===== */
+.profile-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.profile-buttons a {
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.profile-buttons a.primary {
+  background: #111;
+  color: #fff;
+}
+
+.profile-buttons a.primary:hover {
+  background: #333;
+}
+
+.profile-buttons a.secondary {
+  border: 2px solid #ddd;
+  color: #333;
+}
+
+.profile-buttons a.secondary:hover {
+  border-color: #111;
+}
+
+/* ===== FOTO À DIREITA ===== */
+.profile-photo {
+  position: relative;
+  width: 260px;
+  height: 260px;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== ETIQUETA SOBRE A FOTO ===== */
+.badge {
+  position: absolute;
+  bottom: 10px;
+  left: -20px;
+  background: #111;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 6px 14px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge img {
+  width: 20px;
+  height: 20px;
+}
+
+</style>
+
+
+</body>
+</html>
+
